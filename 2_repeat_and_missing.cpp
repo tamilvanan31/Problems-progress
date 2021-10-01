@@ -74,3 +74,31 @@ vector<int> Solution::repeatedNumber(const vector<int> &A) {
 
     return {y, x};
 }
+
+/*
+    consider this example:
+    [1,2,2,4] of form [w,x,y,z]
+    sn = 10
+    sn^2 = 30 for n = 4
+    
+    for input array
+    ipsn = 9
+    ipsn^2 = 25
+    
+    so, the approach goes like...
+    let y,x be the repeating and missing number
+    w + x + y + z = 10     for n^2: w^2 + x^2 + y^2 + z^2 = 30
+    w + y + y + z = 9 (-)           w^2 + y^2 + y^2 + z^2 = 25(-)
+    ------------------              --------------------------
+    x - y = 1                            x^2 - y^2 = 5
+    ------------------              --------------------------
+    
+     x^2 - y^2 = 5 -> (x + y) (x - y) = 5 -> 1(x + y) = 5 
+     x + y = 5
+     x - y = 1(+)
+     ---------
+     2x = 6 -> x = 3
+     ---------
+     x = 3 -> y = 2...
+    
+*/

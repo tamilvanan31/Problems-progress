@@ -1,4 +1,3 @@
-/*
 There are certain problems which are asked in the interview to also check how you take care of overflows in your problem.
 
 This is one of those problems.
@@ -28,7 +27,6 @@ Input:[3 1 2 5 3]
 Output:[3, 4] 
 
 A = 3, B = 4
-*/
 
 // there are two possible approach...
 //1. create a boolean array and get the missing number.
@@ -102,3 +100,7 @@ vector<int> Solution::repeatedNumber(const vector<int> &A) {
      x = 3 -> y = 2...
     
 */
+
+© 2021 GitHub, Inc.
+Terms
+Privacy
